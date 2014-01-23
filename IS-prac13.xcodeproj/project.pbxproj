@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		837D890E189152980054EBE5 /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 837D890D189152980054EBE5 /* button.png */; };
 		839AB7ED188D6C3A00C28FA2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 839AB7EC188D6C3A00C28FA2 /* UIKit.framework */; };
 		839AB7EF188D6C3A00C28FA2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 839AB7EE188D6C3A00C28FA2 /* Foundation.framework */; };
 		839AB7F1188D6C3A00C28FA2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 839AB7F0188D6C3A00C28FA2 /* CoreGraphics.framework */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		837D890D189152980054EBE5 /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
 		839AB7E9188D6C3900C28FA2 /* IS-prac13.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IS-prac13.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		839AB7EC188D6C3A00C28FA2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		839AB7EE188D6C3A00C28FA2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -130,6 +132,7 @@
 		839AB7F3188D6C3A00C28FA2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				837D890D189152980054EBE5 /* button.png */,
 				839AB7F4188D6C3A00C28FA2 /* IS-prac13-Info.plist */,
 				839AB7F5188D6C3A00C28FA2 /* InfoPlist.strings */,
 				839AB7F8188D6C3A00C28FA2 /* main.m */,
@@ -236,6 +239,7 @@
 				839AB801188D6C3A00C28FA2 /* Default@2x.png in Resources */,
 				839AB803188D6C3A00C28FA2 /* Default-568h@2x.png in Resources */,
 				839AB806188D6C3A00C28FA2 /* MainStoryboard.storyboard in Resources */,
+				837D890E189152980054EBE5 /* button.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,6 +457,7 @@
 				839AB823188D6C3A00C28FA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		839AB824188D6C3A00C28FA2 /* Build configuration list for PBXNativeTarget "IS-prac13Tests" */ = {
 			isa = XCConfigurationList;
@@ -461,6 +466,7 @@
 				839AB826188D6C3A00C28FA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

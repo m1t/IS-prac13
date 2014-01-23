@@ -28,6 +28,11 @@
     [self.view addSubview:button];
     
     [button addTarget:self action:@selector(hello:) forControlEvents:UIControlEventTouchUpInside];
+    
+    UIImage * imageData = [UIImage imageNamed:@"button.png"];
+    UIImage * resizableImage = [imageData resizableImageWithCapInsets:UIEdgeInsetsMake(17, 17, 17, 17)];
+    
+    [button setBackgroundImage:resizableImage forState:UIControlStateNormal];
 }
 
 - (void)didReceiveMemoryWarning
@@ -39,7 +44,11 @@
 - (void)hello:(UIButton *)sender
 {
     [[[UIAlertView alloc] initWithTitle:@"Button" message:@"クリック" delegate:self cancelButtonTitle:@"キャンセル" otherButtonTitles:@"OK", nil] show];
-    sender.enabled = !sender.enabled;
+    if (sender.frame.size.height < 200) {
+        sender.frame = CGRectMake(sender.frame.origin.x, sender.frame.origin.y, sender.frame.size.width * 1.2, sender.frame.size.height * 1.5);
+    } else{
+        sender.enabled = !sender.enabled;
+    }
 }
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
